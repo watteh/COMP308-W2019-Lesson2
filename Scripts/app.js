@@ -1,12 +1,11 @@
-"use strict"; // triggers compiler to say certain things will give us errors
-// self executing Anonymous function - AKA IFFY (Immediately Invoked Function Expression)
-(function() {
-    let myFunctionalVariable = 0;
-
+// IIFE -- Immediately Invoked Function Expression
+(function () {
     function Start() {
-        let myLocalVariable = 0;
-        console.log(`App Started... + ${myFunctionalVariable}`);
+        var student;
+        student = new objects.Student(20, "David", "D123456789");
+        student.saysHello();
+        student.studies();
     }
-
     window.addEventListener("load", Start);
 })();
+//# sourceMappingURL=app.js.map
